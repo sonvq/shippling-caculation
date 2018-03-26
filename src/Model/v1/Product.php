@@ -1,6 +1,6 @@
 <?php
 
-namespace Shipping\Model;
+namespace Shipping\Model\v1;
 
 class Product {
 
@@ -106,12 +106,10 @@ class Product {
     }
 
     public function feeByWeight() {
-        var_dump('feeByWeight = ' . $this->weight * $this->weightCoefficient);
         return $this->weight * $this->weightCoefficient;
     }
 
     public function feeByDimension() {
-        var_dump('feeByDimension = ' . $this->width * $this->height * $this->depth * $this->dimensionCoefficient);
         return $this->width * $this->height * $this->depth * $this->dimensionCoefficient;
     }
 

@@ -1,6 +1,6 @@
 <?php
 
-namespace Shipping\Model;
+namespace Shipping\Model\v1;
 
 class Order {
 
